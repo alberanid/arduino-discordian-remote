@@ -3,9 +3,9 @@ Arduino Discordian Remote
 
 Create some infrared havoc!
 
-The *Arduino Discordian Remote* is designed to create confusion and disruption at your local mall.
+The __Arduino Discordian Remote__ is designed to create confusion and disruption at your local mall.
 
-Build it, disguise it the best you can and leave it in front of a wall of TVs.
+Build it, disguise it the best you can and leave it in front of a wall of TV sets.
 It's designed to be activated by motion, and to send random infrared commands for the most popular TV brands for 10 seconds after a movement was detected.
 
 Beware that this is just a draft, and not a mature project.
@@ -44,7 +44,7 @@ How it works
  - it needs the Arduino IRremote library, which can be found here: https://github.com/shirriff/Arduino-IRremote or https://github.com/alberanid/Arduino-IRremote
  - upload the program to your Arduino UNO board.
  - point it to one or more TV.
- - wait for the PIR to stabilize, and then move near it.
+ - wait for the PIR to stabilize, and then move near it. Remember that it can send more or less 100 commands in 10 seconds and, being completely random and distributed over many different protocols, very few will be correct for your own TV set; modify the code (defining the *FORCED\_BRAND* identifier to limit the emitted commands to the ones of a single brand) to restrict the use of a single brand, if you want.
  - can you see the __fnords__?
 
 Resources
